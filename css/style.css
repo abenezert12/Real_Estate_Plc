@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@1,300&family=Nunito:wght@300&display=swap');
 p {
     text-transform: lowercase;
-    
-      &:first-letter {
-          text-transform: capitalize;
-      }
-  }
+}
+
+p::first-letter {
+    text-transform: capitalize;
+}
 *{
     margin: 0; padding: 0;
     box-sizing: border-box;
@@ -227,6 +227,11 @@ header .fa-bars{
     font-size: 3rem;
     margin: 1.5rem 0;
 }
+.blog .row h4{
+    color: var(--sc-color);
+    font-size: 2rem;
+    margin: 0.5rem 0;
+}
 .blog .row p{
     color: var(--th-color);
     font-size: 1.9rem;
@@ -395,10 +400,11 @@ header .fa-bars{
     }
     header .navbar{
         position: fixed;
-        /* */ top: 1000rem; left: 0; 
+        top: -100%; left: 0; 
         text-align: center;
         background: rgba(47, 47, 47, 0.6);
         width: 100%;
+        transition: top 0.3s ease;
     }
     header .navbar.active{
         top: 7.5rem;
@@ -436,8 +442,14 @@ header .fa-bars{
     }
 }
 @media(max-width:550px){
-    .portfolio .row{
-        
-        grid-template-columns: repeat(auto-fit,minmax(40%,1fr));
+    html{
+        font-size: 55%;
+    }
+    .heading{
+        margin: 3rem auto;
+        font-size: 2.5rem;
+    }
+    .blog .row{
+        grid-template-columns: 1fr;
     }
 }
