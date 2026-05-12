@@ -1,7 +1,7 @@
 let Navbar = document.querySelector('.navbar');
-let Fabars = document.querySelector('.fa-bars');
+let menuToggle = document.querySelector('.toggle-menu');
 
-Fabars.onclick = () =>{
+menuToggle.onclick = () =>{
     Navbar.classList.toggle("active")
 };
 
@@ -10,4 +10,10 @@ document.querySelectorAll('.navbar a').forEach(link => {
     link.onclick = () => {
         Navbar.classList.remove("active");
     };
+});
+
+// Reload to home page on page refresh/load
+window.addEventListener('load', () => {
+    window.location.hash = '#home';
+    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
 });

@@ -7,44 +7,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <!-- cdn fonawsam  -->
     <script src="https://kit.fontawesome.com/3477ae541c.js" crossorigin="anonymous"></script>
-    <!-- swipper cdn  -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="css/style.css">
-    <title>Real Estate Plc</title>
+    <title>Real Estate</title>
 </head>
 <body>
     <!-- header  -->
-    <header class="header"> <!--<header> element with a class attribute set to "header."  -->
-        <div class="box">
-            <div class="image">
-                <img src="img/about/hlogo.jpg" alt="image"> <a href="#home" class="logo"> Real Estate Plc</a>
-            </div>
-        </div>
-            <nav class="navbar"> <!-- <nav> element with a class attribute set to "navbar."-->
+    <header class="header">
+        <a href="#home" class="logo-container">
+            <img src="img/about/hlogo.jpg" alt="logo" class="logo-icon">
+            <span class="logo-text">Real Estate</span>
+        </a>
+            <nav class="navbar">
                 <a href="#home">home</a>
                 <a href="#about">about</a>
+                <a href="#services">services</a>
+                <a href="#building">apartments</a>
+                <a href="#blog">listings</a>
                 <a href="#contact">contact</a>
             </nav>
-        <i class="fa-solid fa-bars"></i>
+        <i class="fa-solid fa-ellipsis-vertical toggle-menu"></i>
     </header>
     <!-- /header  -->
     <!-- home  -->
-    <div class="home" id="home"> <!--creates a <div> element with the class "home" and the ID "home-->
+    <section class="home" id="home">
         <div class="image">
-            <img src="img/home/1.jpg" alt="image">
+            <img src="img/home/1.jpg" alt="real estate home">
         </div>
-            <div class="box">
-                <div class="content">
-                    <div class="image">
-                        <img src="img/about/logo.jpg" alt="image">
-                    </div>
-                    <p>We Help You Find Your Dream House and Office!</p>
-                    <p>We build Community!</p>
-                    <a href="#building" class="btn">SHOW</a>
-                </div>
+        <div class="box">
+            <div class="content">
+                <span class="subtitle">Premium property services in Addis Ababa</span>
+                <h1>Find your dream home and office space</h1>
+                <p>Modern living, premium locations, and trusted support from our expert real estate team.</p>
+                <a href="#building" class="btn">Explore Listings</a>
             </div>
         </div>
-    </div>
+    </section>
     <!-- /home  -->
     <!-- about  -->
     <section class="about" id="about"> <!--<section> element with the class "about" and the ID "about."-->
@@ -53,8 +50,11 @@
             <div></div>
         </div>
         <div class="box">
+            <div class="image">
+                <img src="img/about/logo.jpg" alt="modern real estate design">
+            </div>
             <div class="content">
-                <p><name>Real</name> Estate Plc is to live in a better world by providing people with decent housing and living standards. <name>Recognizing</name> the basic need of planned development and growth across the residential and commercial segment of the real estate industry, This company is to full fill an individuals’ dream of owning a house or any Commercial property. <name>The</name> aim is to find solutions that compline high end technology, design and aesthetics and meet customer aspirations and expectations’ through superior standards performance and service.</p>
+                <p>Real Estate is committed to creating a better world by providing premium housing and excellent living standards. We focus on planned residential and commercial development, helping individuals own homes, offices, and commercial properties that reflect modern design, functionality, and lasting value.</p>
             </div>
         </div>
     </section>
@@ -80,7 +80,7 @@
                 <h3>
                     Building House
                 </h3>
-                <p><name>We</name> build because most human activities cannot take place outdoors. <name>we</name> need shelter from sun, and snow.</p>
+                <p>We design and build homes that balance comfort, efficiency, and enduring style so families can thrive indoors and outdoors.</p>
             </div>
 
             <div class="box">
@@ -227,7 +227,7 @@
             </div>
             <div class="content">
                 <h3>Alx students</h3>
-                <p><name>I</name> am <name>Abenezer Tekalign</name>. <name>I</name> am currently software engineering students of <name>Alx</name> and also <name>I</name> am working on this project for Web Design and Development.</p>
+                <p>I am Abenezer Tekalign. I am currently a software engineering student at Alx, and I created this website to showcase modern real estate and property services.</p>
             </div>
         </div>
     </section>
@@ -246,8 +246,8 @@
             </div>
             <div class="content">
                 <i class="fa-solid fa-envelope"></i>
-                <div><p>email: realestateplc@gmail.com</p></div>
-                <div><p>web: www.realestateplc.com</p></div>
+                <div><p>email: contact@realestate.com</p></div>
+                <div><p>web: www.realestate.com</p></div>
             </div>
             <div class="content">
                 <i class="fa-solid fa-location-dot"></i>
@@ -257,15 +257,12 @@
         </div>
 
         <div class="row">
-
             <div class="form-c">
-                <form action="">
-                    <input type="text" placeholder="name">
-                    <input type="email" placeholder="email">
-                    <input type="number" placeholder="phone">
-                    <textarea type="text" placeholder="Write your text here" cols="30" rows="10"></textarea>
-                    <input type="submit" value="send message">
-                </form>
+                <div class="contact-card">
+                    <h3>Send us a property inquiry</h3>
+                    <p>For fast support and custom property options, tap the button below and we'll get back to you immediately.</p>
+                    <a href="mailto:contact@realestate.com" class="btn">Email Us</a>
+                </div>
             </div>
         </div>
     </section>
@@ -273,8 +270,8 @@
     <!-- footer  -->
     <footer class="footer">
         <div class="content">
-            <h3>Real Estate Plc</h3>
-            <p>Find your place with an immersive photo experience and the most listings, including things you won’t find anywhere else.</p>
+            <h3>Real Estate</h3>
+            <p>Find your place with immersive visuals, premium listings, and modern property services designed for today’s lifestyle.</p>
             <div class="shar">
                 <i class="fa-brands fa-facebook"></i>
                 <i class="fa-brands fa-instagram"></i>
@@ -298,7 +295,6 @@
         </div>
     </footer>
     <!-- /footer  -->
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
