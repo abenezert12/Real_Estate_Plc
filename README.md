@@ -55,4 +55,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 Abenezer Tekalign
 
-Copyright © 2023 Abenezer Tekalign
+Copyright © 2023 Benny
